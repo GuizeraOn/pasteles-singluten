@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Pasteles Sin Culpa - Sofía Valdés</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            orange: '#FDB851', // Warm yellow/orange from button
+                            brown: '#3E2723', // Dark brown for text
+                            red: '#DC2626', // Red for badges
+                            beige: '#FFF8E1', // Light beige bg
+                        }
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'button': '0 4px 0px 0px rgba(180, 83, 9, 0.3)', // Solid shadow for button feel
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-shadow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-stone-800 font-sans antialiased">
+
+    <!-- Wrapper for Mobile View Simulation on Desktop -->
+    <main class="max-w-[480px] mx-auto bg-white min-h-screen shadow-2xl overflow-hidden relative">
+
+        <!-- HERO SECTION -->
+        <header class="relative bg-brand-orange pt-6 pb-8 px-4 text-center overflow-hidden">
+            <!-- Background Image Overlay (Opacified) -->
+            <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center"
+                style="background-image: url('https://cdn.lugc.link/b74ad219-ffe1-47c9-a821-4768eef18885/-/stretch/off/-/resize/763x/-/format/auto/');">
+            </div>
+
+            <div class="relative z-10 flex flex-col items-center">
+                <!-- Badge -->
+                <span
+                    class="bg-brand-red text-white font-bold px-4 py-1 rounded-full text-sm mb-3 transform -rotate-2 shadow-sm inline-block">
+                    Sin Gluten
+                </span>
+
+                <!-- Headline -->
+                <h1 class="text-3xl font-extrabold leading-snug tracking-tight mb-3 flex flex-col items-center gap-1">
+                    <span class="bg-[#F5941F] text-white px-3 py-1 shadow-sm transform -rotate-1">Recetas de
+                        Pasteles</span>
+                    <span class="bg-[#F5941F] text-white px-3 py-1 shadow-sm transform rotate-1">para comer</span>
+                    <span class="text-[#E65100] text-4xl mt-1 drop-shadow-sm font-black">Sin Culpa</span>
+                </h1>
+
+                <!-- Subheadline -->
+                <div class="bg-brand-brown/90 text-white py-1.5 px-3 rounded-lg my-3 max-w-xs mx-auto shadow-md">
+                    <p class="text-sm font-medium leading-snug">
+                        Recetas Saludables y Deliciosas <br> para Amantes de los Pasteles
+                    </p>
+                </div>
+
+                <!-- Price Tag -->
+                <div class="inline-block bg-brand-brown text-white text-xs font-bold px-3 py-1 rounded mb-4">
+                    POR SOLO $6.99
+                </div>
+
+                <!-- Benefits Box (White on Orange) -->
+                <div class="bg-white rounded-xl shadow-lg p-5 w-full max-w-sm mx-auto mt-2 transform translate-y-2">
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-stone-700 font-semibold italic text-sm">Recetas <span
+                                    class="font-bold text-stone-900 not-italic">Probadas y Aprobadas</span></span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-stone-700 font-semibold italic text-sm"><span
+                                    class="font-bold text-stone-900 not-italic">Sin Lácteos y Sin Azúcar</span></span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="text-stone-700 font-semibold italic text-sm">Ingredientes <span
+                                    class="font-bold text-stone-900 not-italic">Fáciles de Conseguir</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- VISUALS & FEATURES SECTION -->
+        <section class="bg-white pt-8 pb-6 px-4">
+            <!-- Single Delicious GIF -->
+            <div class="rounded-xl overflow-hidden shadow-md h-48 mb-4 -mt-1">
+                <img loading="lazy"
+                    src="https://images.assets-landingi.com/uc/305d81c5-e529-44fe-b4ec-5f914a3b6ff6/ezgifcomresize.gif"
+                    alt="Pastel Delicioso" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Intro to Book -->
+            <div class="text-center mb-6">
+                <p class="text-stone-600 text-lg mb-0.5 leading-tight">Te presento el <br> Libro de recetas</p>
+                <h2 class="text-3xl font-bold text-brand-brown mb-4">Pasteles Sin Gluten</h2>
+
+                <!-- Mockup Image -->
+                <div class="flex justify-center mb-0 relative z-10">
+                    <img loading="lazy" src="https://i.postimg.cc/gk27QLTX/image-Photoroom-2025-12-16T180-(1).webp"
+                        alt="Ebook Cover"
+                        class="w-32 drop-shadow-2xl hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+
+            <!-- Dashed Benefits Box -->
+            <div
+                class="border-2 border-dashed border-orange-300 rounded-2xl p-5 pt-8 -mt-8 bg-brand-beige relative z-0 mx-2">
+                <p class="text-center font-bold text-lg text-stone-800 mb-4 leading-snug">
+                    ¡Recibirás 12 recetas <span class="text-brand-red">inéditas</span>! <br>
+                    <span class="font-normal text-base">Con fotos reales y paso a paso simple.</span>
+                </p>
+
+                <div class="space-y-3 text-left pl-1">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-7 h-7 rounded-full border border-orange-400 flex items-center justify-center bg-white text-orange-500">
+                            <!-- Icon: Wheat/Grain -->
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="font-bold text-stone-800 text-sm">Sin Gluten</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-7 h-7 rounded-full border border-orange-400 flex items-center justify-center bg-white text-orange-500">
+                            <!-- Icon: Milk -->
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="font-bold text-stone-800 text-sm">Sin Lácteos</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-7 h-7 rounded-full border border-orange-400 flex items-center justify-center bg-white text-orange-500">
+                            <!-- Icon: Beaker/No Chemicals -->
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="font-bold text-stone-800 text-sm">Sin Conservadores</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-7 h-7 rounded-full border border-orange-400 flex items-center justify-center bg-white text-orange-500">
+                            <!-- Icon: Cube sugar -->
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-bold text-stone-800 text-sm">Azúcar:</span> <span
+                                class="text-stone-600 text-sm">con o sin,</span>
+                            <br><span class="text-xs italic text-stone-500">tú decides.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-7 h-7 rounded-full border border-orange-400 flex items-center justify-center bg-white text-orange-500">
+                            <!-- Icon: Egg -->
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 2a5 5 0 015 5v10a5 5 0 01-5 5h0a5 5 0 01-5-5V7a5 5 0 015-5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="font-bold text-stone-800 text-sm">Huevos:</span> <span
+                                class="text-stone-600 text-sm">con o sin,</span>
+                            <br><span class="text-xs italic text-stone-500">es opcional.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-6 px-2">
+                <a href="https://pay.hotmart.com/X103461062F?checkoutMode=10"
+                    class="block w-full bg-brand-orange hover:bg-orange-500 text-stone-900 font-black text-xl text-center py-4 rounded-xl shadow-button uppercase tracking-wide transition-all active:translate-y-1 active:shadow-none">
+                    DESCARGAR MI COPIA
+                </a>
+                <p class="text-center text-xs text-stone-500 mt-2 flex items-center justify-center gap-1">
+                    <svg class="w-3 h-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Compra 100% Segura
+                </p>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF SECTION -->
+        <section class="bg-gray-50 pt-6 pb-8 px-4 shadow-inner">
+            <!-- Author Compact -->
+            <div class="flex items-center gap-2 mb-4 bg-white p-2 rounded-full shadow-sm max-w-xs mx-auto">
+                <img src="https://cdn.lugc.link/ab78b3e4-0825-493b-bdcf-8e014ce252f0/-/crop/97x96/6,9/-/preview/34x34/-/format/auto/"
+                    alt="Sofia Valdes" class="w-8 h-8 rounded-full border-2 border-brand-orange">
+                <div class="text-xs leading-tight">
+                    <p class="text-stone-500">Recetas firmadas por <span class="font-bold text-stone-800 italic">Sofía
+                            Valdés</span>,</p>
+                    <p class="text-stone-500">creadora de <span
+                            class="text-blue-500 font-semibold">@tu.cocinasaludable</span></p>
+                </div>
+            </div>
+
+            <!-- Instagram Print -->
+            <div class="relative mb-6 transform hover:scale-[1.01] transition-transform duration-500">
+                <img loading="lazy" src="https://i.postimg.cc/fTVKYcFw/image-Photoroom-2025-12-16T181.webp"
+                    alt="Instagram Feed" class="w-full rounded-lg shadow-xl border-4 border-white">
+            </div>
+
+            <div class="text-center mb-6">
+                <h3 class="text-xl font-bold text-stone-900 leading-tight">
+                    Mira los comentarios <br> en el post fijado
+                </h3>
+                <p class="text-red-500 font-medium text-sm">
+                    Más de <span class="font-bold">500 comentarios</span> de clientes satisfechas.
+                </p>
+            </div>
+
+            <!-- Comments Image -->
+            <div class="rounded-xl overflow-hidden shadow-card border border-gray-100 mx-4">
+                <img loading="lazy" src="https://i.postimg.cc/wvVHzyYr/1765920682443-019b2911-4a8a-7a1f.webp"
+                    alt="Testimonios 1" class="w-full block">
+                <img loading="lazy" src="https://i.postimg.cc/FzHvHrhW/1765920436711-019b290e-9e1f-7d75.webp"
+                    alt="Testimonios 2" class="w-full block">
+            </div>
+        </section>
+
+        <!-- DELIVERY INFO SECTION -->
+        <section class="bg-white pt-6 pb-6 px-4">
+            <h3 class="text-xl font-bold text-center text-stone-900 mb-4">
+                ¿Y cómo voy a recibirlo?
+            </h3>
+
+            <div class="border-2 border-stone-200 rounded-xl p-4 text-center shadow-sm">
+                <p class="font-bold text-stone-800 text-lg mb-1">Recíbelo al instante</p>
+                <div class="flex justify-center items-center gap-4 my-2">
+                    <img src="https://icons.assets-landingi.com/icon_40792baf9f79d201b12b6f315881245a.svg"
+                        class="w-8 h-8" alt="Email">
+                    <span class="font-bold text-stone-600">&</span>
+                    <img src="https://icons.assets-landingi.com/icon_1eca1719289981638d12b2ea15b55246.svg"
+                        class="w-8 h-8" alt="WhatsApp">
+                </div>
+                <p class="text-stone-600 text-sm">por <span class="font-bold text-stone-800">e-mail y WhatsApp</span>
+                    <br> tras el pago. <span class="font-bold">¡Cero espera!</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="bg-brand-beige/50 pt-6 pb-8 px-4">
+            <div class="text-center mb-6">
+                <svg class="w-8 h-8 text-stone-800 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">
+                    </path>
+                </svg>
+                <h3 class="text-xl font-bold text-brand-brown">Siempre me preguntan...</h3>
+            </div>
+
+            <div class="space-y-3">
+                <!-- Q1 -->
+                <div class="bg-white rounded-xl shadow-card overflow-hidden">
+                    <div class="bg-brand-orange/30 p-3">
+                        <p class="font-bold text-stone-800 text-md leading-tight text-center">Sofía, ¿los ingredientes
+                            son caros?</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-stone-700 leading-relaxed text-sm"><span
+                                class="font-bold text-stone-900">¡No!</span> Usamos ingredientes simples que ya tienes
+                            en casa.</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="bg-white rounded-xl shadow-card overflow-hidden">
+                    <div class="bg-brand-orange/30 p-3">
+                        <p class="font-bold text-stone-800 text-md leading-tight text-center">¿El pastel realmente queda
+                            rico y esponjoso?</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-stone-700 leading-relaxed text-sm"><span
+                                class="font-bold text-stone-900">¡Sí!</span> Queda igual a un pastel normal. Esponjoso,
+                            delicioso, húmedo y no se desmorona. Nadie nota que no tiene gluten.</p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="bg-white rounded-xl shadow-card overflow-hidden">
+                    <div class="bg-brand-orange/30 p-3">
+                        <p class="font-bold text-stone-800 text-md leading-tight text-center">¿Necesito ser experta en
+                            la cocina?</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-stone-700 leading-relaxed text-sm"><span
+                                class="font-bold text-stone-900">¡No!</span> Son recetas para todos los niveles, con un
+                            paso a paso súper sencillo.</p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="bg-white rounded-xl shadow-card overflow-hidden">
+                    <div class="bg-brand-orange/30 p-3">
+                        <p class="font-bold text-stone-800 text-md leading-tight text-center">¿De verdad me llega el
+                            e-book después del pago?</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-stone-700 leading-relaxed text-sm"><span class="font-bold text-stone-900">¡Claro
+                                que sí!</span> Lo recibes al instante en tu correo y en tu WhatsApp. Todo es automático.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUARANTEE SECTION -->
+        <section class="bg-white pt-8 pb-8 px-4 text-center">
+            <h3 class="text-xl font-light text-stone-700 mb-0.5">Prueba</h3>
+            <h2 class="text-2xl font-bold text-brand-orange mb-6">Sin Riesgos</h2>
+
+            <div class="relative border-2 border-stone-200 rounded-xl p-6 pt-12 mt-12">
+                <!-- Badge Centered Top -->
+                <div class="absolute -top-10 left-1/2 transform -translate-x-1/2">
+                    <img loading="lazy"
+                        src="https://images.assets-landingi.com/62ThXjtK/bf89eb8a_garantia_7_dia_3_1041041000000000000028.png"
+                        alt="7 Dias Garantia" class="w-20 drop-shadow-md">
+                </div>
+
+                <h4 class="font-bold text-base text-stone-900 mb-2">Satisfacción garantizada o te devolvemos tu dinero.
+                </h4>
+                <p class="text-stone-600 text-sm leading-relaxed">
+                    Tienes hasta <span class="font-bold text-stone-800">7 días</span> para solicitar el reembolso del
+                    valor pagado por el producto.
+                </p>
+            </div>
+        </section>
+
+        <!-- AUTHOR SECTION -->
+        <section class="bg-white pb-0">
+            <div class="text-center mb-4 px-4">
+                <p class="text-stone-500 font-light text-lg">Sobre la Autora,</p>
+                <h2 class="text-2xl font-bold text-red-500">Sofía Valdés</h2>
+            </div>
+
+            <div class="relative">
+                <img loading="lazy"
+                    src="https://cdn.lugc.link/cd120e78-72c5-4cbc-9cb9-a5627d53b43f/-/stretch/off/-/resize/763x/-/format/auto/"
+                    alt="Sofía Valdés" class="w-full object-cover h-[350px]">
+
+                <!-- Floating Bio Card -->
+                <div
+                    class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-2xl text-center border-b-4 border-brand-orange">
+                    <p class="text-stone-700 text-sm leading-relaxed italic">
+                        "La intolerancia al gluten me enseñó a cuidar de mi salud. Cuando mi hija nació con el mismo
+                        diagnóstico, cocinar dejó de ser una opción: se convirtió en mi misión."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <footer class="bg-stone-900 text-white py-8 px-4 text-center">
+            <h2 class="text-xl font-bold mb-1">Descubre los Secretos de los Pasteles Sin Gluten Perfectos</h2>
+            <p class="text-brand-orange font-medium text-base mb-6">¡y saboréalos hoy mismo!</p>
+
+            <a href="https://pay.hotmart.com/X103461062F?checkoutMode=10"
+                class="block w-full max-w-sm mx-auto bg-brand-orange hover:bg-orange-500 text-stone-900 font-black text-xl py-4 rounded-xl shadow-[0_4px_0_rgba(255,255,255,0.2)] uppercase tracking-wide transition-all active:translate-y-1 active:shadow-none mb-4 animate-bounce">
+                DESCARGAR MI COPIA
+                <span class="block text-xs font-normal normal-case mt-1 opacity-80">Acceso Inmediato - Solo $6.99</span>
+            </a>
+
+            <p class="text-stone-500 text-xs mt-8">
+                Copyright © 2024 Todos los derechos reservados
+            </p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Simple smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
